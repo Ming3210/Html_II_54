@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        ASYNCHRONOUS - Bất đồng bộ
+        1. Callback
+            Là hàm đc truyền vào làm đối số của hàm khác khi nhiều hàm ông thì sẽ dẫn đến tình trạng callback hell
+        2. Promise
+            Sinh ra để xử lí các tác vụ bất đồng bộ
+            Khi gặp các cái code dạng callback hell khi sử lí vs promise code gọn gàng hơn, dễ maintain
+            Khi trong promise có nhiều then thì kết quả của .then trc sẽ là tham số của thk .then sau
+
+            Cách dùng promise
+            1. Khởi tạo promise
+            2. Bên rong hàm tạo constructor object nhận vào 1 đối số là 1 function, trong function nhận vào 2 tham số là resolve và reject 
+                - Khi logic code thành công thì gọi resolve 
+                - Nếu thất bại thì gọi reject
+            3. promise
+                - .then((data)=>console.log(data))
+                - .catch((error)=>console.log(error)))
+            Khi trong promise có nhiều then thì tham số của then sai sẽ nhận kết quả trả về của hàm then trc
+        3. Asyn-await 
+    -->
+</body>
+<!-- <script>
+    // let promise = new Promise((resolve,reject)=>{
+    //     // resolve : Gq thành công
+    //     // reject : từ chối , thất bại
+    //     // Viết các loại logic code
+    //     // Thành công gọi resolve
+    //     // Thất bại gọi reject 
+    //     resolve()
+    //     // reject("Có lỗi")    
+    // })
+    // promise
+    // .then(()=>{
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             resolve(11111)
+    //         },1000)
+    //     })
+    // })
+    // .then((data)=>{
+    //   console.log(11111,data);
+    //   return new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve(222222)
+    //     },1000)
+    //   })
+    // })
+    // .then((data2)=>{
+    //   console.log(222222,data2);
+    //   return new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve(333333)
+    //     },1000)
+    //   })
+    // })
+    // .then((data3)=>{
+    //     console.log(333333,data3);
+    // })
+   
+    // .catch(error=>console.log("Lỗi",error))
+    // // console.log(promise);
+    // function getData(){
+    //     try {
+    //         let getData = fetch('https://jsonplaceholder.typicode.com/posts')
+    //     getData
+    //     .then(user=>user.json())
+    //     .then(data=>{
+    //         console.log("Gia tri lay ve",data);
+        
+    //     })
+    //     .catch(err=>console.log("Loi khi lay ve",err))
+    //     } catch (error) {
+            
+    //     }
+    // }
+    // getData()
+    
+</script> -->
+<!-- <script src="B1.js"></script> -->
+<!-- <script src="B2.js"></script> -->
+<!-- <script src="B3.js"></script> -->
+<!-- <script src="B5.js"></script> -->
+<!-- <script src="B7.js"></script> -->
+<!-- <script src="B8.js"></script> -->
+<!-- <script src="B9.js"></script> -->
+<script src="B10.js"></script>
+
+</html>
